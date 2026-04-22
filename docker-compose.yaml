@@ -7,6 +7,7 @@ services:
     volumes:
       - ./config.xml:/etc/clickhouse-server/config.d/local.xml
       - ./macros11.xml:/etc/clickhouse-server/config.d/macros.xml
+      - ./users.xml:/etc/clickhouse-server/users.d/users.xml 
     ports:
       - 9011:9000
       - 8111:8123
@@ -17,6 +18,7 @@ services:
     volumes:
       - ./config.xml:/etc/clickhouse-server/config.d/local.xml
       - ./macros12.xml:/etc/clickhouse-server/config.d/macros.xml
+      - ./users.xml:/etc/clickhouse-server/users.d/users.xml 
     ports:
       - 9012:9000
       - 8112:8123
@@ -27,6 +29,7 @@ services:
     volumes:
       - ./config.xml:/etc/clickhouse-server/config.d/local.xml
       - ./macros21.xml:/etc/clickhouse-server/config.d/macros.xml
+      - ./users.xml:/etc/clickhouse-server/users.d/users.xml 
     ports:
       - 9021:9000
       - 8121:8123
@@ -37,6 +40,7 @@ services:
     volumes:
       - ./config.xml:/etc/clickhouse-server/config.d/local.xml
       - ./macros22.xml:/etc/clickhouse-server/config.d/macros.xml
+      - ./users.xml:/etc/clickhouse-server/users.d/users.xml 
     ports:
       - 9022:9000
       - 8122:8123
